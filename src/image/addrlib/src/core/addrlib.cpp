@@ -197,7 +197,8 @@ ADDR_E_RETURNCODE Lib::Create(
             pCreateIn->hClient,
             pCreateIn->callbacks
         };
-
+        ADDR_PRNT(pCreateIn->chipEngine);
+        ADDR_PRNT(pCreateIn->chipFamily);
         switch (pCreateIn->chipEngine)
         {
             case CIASICIDGFXENGINE_SOUTHERNISLAND:
